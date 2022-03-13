@@ -11,3 +11,5 @@ https://uzmanimakademi.net/html/html-genel
 https://getbootstrap.com/docs/5.1/getting-started/download/
 
 https://emmet.io/
+
+https://developer.mozilla.org/en-US/
