@@ -7,3 +7,7 @@ https://www.smashingmagazine.com/
 https://tympanus.net/codrops
 
 https://uzmanimakademi.net/html/html-genel
+
+https://getbootstrap.com/docs/5.1/getting-started/download/
+
+https://emmet.io/
