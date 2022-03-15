@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "..\\calisma"
+		},
+		{
+			"path": "..\\kodluyoruz_sonVideo"
+		},
+		{
+			"path": "..\\Tatli_Tarifi_Ödev"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Tatli_Tarifi_Ödev"
+	}
+}
