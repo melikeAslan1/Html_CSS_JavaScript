@@ -1,0 +1,19 @@
+h2{
+    color:rgb(192, 35, 140);
+    font-size: 56px;
+    text-transform: uppercase;
+ }
+
+ p{
+     /* color: black; */
+     font-size: 56px;
+ }
+
+ body {
+     background-color: blue;
+     color: aliceblue;
+ }
+
+ ul{
+     color: brown;
+ }
