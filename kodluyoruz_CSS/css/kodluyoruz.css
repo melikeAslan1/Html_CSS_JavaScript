@@ -12,8 +12,12 @@ h2{
  body {
      background-color: blue;
      color: aliceblue;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 67px;
  }
 
  ul{
      color: brown;
  }
+
+ 
