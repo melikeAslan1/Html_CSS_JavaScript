@@ -1,3 +1,13 @@
+https://www.w3schools.com/cssref/css_selectors.asp
+
+https://coderspace.io/etkinlikler
+
+https://cssbattle.dev/
+
+codepen.io
+
+bootstrap
+
 https://colorhunt.co/palette/533e85488fb14fd3c4c1f8cf
 
 https://mybrandnewlogo.com/tr/renk-paleti-ureteci
@@ -11,3 +21,5 @@ https://uzmanimakademi.net/html/html-genel
 https://getbootstrap.com/docs/5.1/getting-started/download/
 
 https://emmet.io/
+
+https://university.mongodb.com/     eğitimler var.

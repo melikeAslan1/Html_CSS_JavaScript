@@ -1,9 +1,0 @@
-https://www.w3schools.com/cssref/css_selectors.asp
-
-https://coderspace.io/etkinlikler
-
-https://cssbattle.dev/
-
-codepen.io
-
-bootstrap
