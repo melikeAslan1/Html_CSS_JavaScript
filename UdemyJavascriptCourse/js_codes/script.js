@@ -193,3 +193,117 @@ sonuc = markalar1.splice(0, 1);
 console.log(sonuc);
 console.log(markalar1);
 
+//////////////////////////// OBJECTS
+// dict, json
+let kullaniciA = {
+    "ad": "Sadık",
+    "soyad": "Turan",
+    "yas": 38,
+    "adres": {
+        "sehir": "kocaeli",
+        "ilce": "izmit"
+    },
+    "hobiler": ["sinema","spor"]
+}
+let kullaniciB = {
+    "ad": "Çınar",
+    "soyad": "Turan",
+    "yas": 3855,
+    "adres": {
+        "sehir": "kocaeli",
+        "ilce": "izmit"
+    },
+    "hobiler": ["sinema","spor"]
+}
+
+let sonuc;
+
+sonuc = kullaniciA.ad;
+sonuc = kullaniciA.soyad;
+sonuc = kullaniciA["yas"];
+sonuc = kullaniciA.adres.sehir;
+sonuc = kullaniciA.adres.ilce;
+sonuc = kullaniciA.hobiler[0];
+sonuc = kullaniciA.hobiler[1];
+
+let kullanicilar = [
+    kullaniciA,
+    kullaniciB
+];
+sonuc = kullanicilar[1].ad;
+
+let urunler = [
+    {
+        "urun_adi": "samsung s22",
+        "urun_fiyat": 13000
+    },
+    {
+        "urun_adi": "samsung s23",
+        "urun_fiyat": 15000
+    }
+]
+
+sonuc = urunler[0].urun_adi;
+
+console.log(sonuc);
+
+//////////////for
+// let toplam = 0;
+
+// for(let i = 1; i <= 10; i++) {
+//     toplam += i;
+// }
+// console.log(toplam);
+
+let sayilar = [1,4,5,8,4,3,12,5,3,5];
+
+let toplam = 0;
+
+// for(let i=0; i < sayilar.length; i++) {
+//     toplam += sayilar[i];    
+// }
+
+// for(let i in sayilar) {
+//     toplam += sayilar[i];
+// }
+
+for(let sayi of sayilar) {
+    toplam += sayi;
+}
+
+console.log(toplam);
+
+let user = {
+    "name": "Sadık Turan",
+    "username": "sadikturan",
+    "password": "12345",
+    "email": "info@sadikturan.com"
+};
+
+for (let key in user) {
+    console.log(key);
+    console.log(user[key]);
+}
+
+///////////////////// scopes
+var isim = "Ahmet"; // global scope
+const adres = "İstanbul"; //sonradan değiştirmek icin atama yaparsan hata verir.
+
+function yazdir() {
+    var isim = "Ayşe";
+    var yas = 20;
+    console.log("function scope: ", isim, yas);
+}
+
+if(true) {
+    let cinsiyet = "Kadın";
+    let isim = "Zeynep";
+    console.log(isim, cinsiyet);
+}
+
+console.log(isim);
+
+yazdir();
+
+// fonksiyonlar kendi scope alanlarını oluşturur.
+// block içerisinde yeni bir scope oluşmaz. (let,const)
