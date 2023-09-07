@@ -1,0 +1,12 @@
+border: çerçeve -->border:7px solid red;  --> kalınlık tip renk
+
+border radius: çerçevenin oval olması  --> border-radius: 25px;
+
+---------------------------------------------
+
+width genislik
+height boy
+
+width:600 px;  50%; tarayıcıya göredir.
+height:100 px;  değişmez
+

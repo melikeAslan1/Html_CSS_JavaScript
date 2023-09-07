@@ -1,0 +1,21 @@
+------BOOTSTRAP CLASS'LARI---------
+
+class="text-center" --->      yazı ortalansın
+
+class="container"
+
+align-items-center -->       <div class="row align-items-center">      --->     satır yapıyorum içine yazdığım sütünları ortala.
+
+align-items-end  -->         <div class="row align-items-end">   -->     satır yapıyorum içine yazdığım sütünları ortala.
+
+flex-column  -->             <div class="row flex-column "> -->  o satırın altına yazdığım sütunları satır gibi yap. 
+
+col-auto ----->              inline element gibi. sadece o alanı kaplar .
+
+justify-content-start  -->    <div class="row justify-content-start">  justify-content-start  -->  justify:ayarlamak --> altına yazacagın içerikleri soldan başlat.
+
+ustify-content-center -->    <div class="row justify-content-center">  justify-content-center --> merkeze al.
+
+justify-content-end   -->    <div class="row justify-content-end">   sona al.
+
+align self  -->             
