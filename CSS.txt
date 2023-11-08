@@ -1,12 +1,312 @@
-border: çerçeve -->border:7px solid red;  --> kalınlık tip renk
-
-border radius: çerçevenin oval olması  --> border-radius: 25px;
-
----------------------------------------------
 
 width genislik
 height boy
 
-width:600 px;  50%; tarayıcıya göredir.
-height:100 px;  değişmez
+width:600 px;  50%; tarayıcıya göredir.  en.
+height:100 px;  değişmez.  boy.
+----------------------------------------------------
+position-aBDOLUTE: bağımsız
+
+---------------------BACKGROUND---------------------------------------
+
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+background (shorthand property)
+
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+
+p {
+  background-image: url("paper.gif");
+}
+
+
+shorthand property;
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+
+
+---------------------------BORDER-------------------------------------------
+
+
+border: çerçeve -->border:7px solid red;  --> kalınlık tip renk
+
+border radius: çerçevenin oval olması  --> border-radius: 25px;
+
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+
+
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+border-width: medium;
+border-width: 2px;
+border-width: thick;
+
+border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+
+border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+
+border-color: blue;
+
+border-color: #ff0000; /* red */
+
+border-color: rgb(255, 0, 0); /* red */
+
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+
+
+-------------------------MARGIN--------------------------------------------------
+
+used to create space around elements, elementin dışında boşluk.
+
+
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 150px;
+margin-left: 80px;
+background-color: lightblue;
+
+
+p {
+  margin: 25px 50px 75px 100px;
+}  --->
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+
+
+üstten kalıtım alıyor;
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}
+
+
+-------------------------------PADDING---------------------------------------
+
+Padding is used to create space around an element's content, inside of any defined borders.
+
+element içeriğin içindeki boşluk, 
+
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+
+----------------------------OUTLINE-----------------------------------------------
+
+border'ın dışındaki çizgi.
+
+-----------------------------SAS-----------------------------------------------
+
+iç içe yazabilirisin.
+
+-----------------------------TEXT-------------------------------------------------
+
+text-align         ---> text'in yatay konumu koordinatı
+text-align-last     ---> text sonu konumu
+direction
+unicode-bidi
+vertical-align
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+
+div {
+  text-align: justify;    ---->  dergi ve gazetelerdeki gibi yazıyı düz yapar.
+}
+
+
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+
+a {
+  text-decoration: none;  ---> link olduğunu belirtmek için
+}
+
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+p {
+  text-indent: 50px;  --> satır başı boşluğu için
+}
+
+h1 {
+  letter-spacing: 5px; --> metindeki karakterler arası boşuk.
+}
+
+h2 {
+  letter-spacing: -2px;
+}
+
+p.small {
+  line-height: 0.8;  --> satır arası boşluk, satır yüksekliği
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+------------------------------------Z index----------------------------------------
+
+img{
+    position:absolute;  ---> bunu da yazmalısın.
+    z-index: -1;
+                }
+
+------------------------------------POSITION---------------------------------------
+
+static
+relative
+fixed     --> hep ekranda kalsın
+absolute
+sticky
+
+
+------------------------------------------------------------------------------------
+
+farklı sayfanın class ını kullanıyorum container ında padding var.
+
+.hekimler {
+  .hekimler-baslik {
+    font-size: 35px;
+    color: #0d3960;
+    font-family: ProximaNova-Semibold, sans-serif;
+    padding-bottom: 51px;
+    padding-left: 8px;
+  }
+
+  padding-bottom: 70px;
+
+  &.detay {  ---> yeni sayfamda detay class ı açtım.
+    .container {
+      padding-top: 100px;
+    }
+  }
+}
+
+------------------ div icinde img ortalama ------------------------------------
+
+class a d-flex align-items-center  justify-content-center
+
+
+------------------------------------before after---------------------------------------------
+
+:before & ::after, bir web sayfasının DOM’unda yer almayan, yani HTML kodları içerisinde fiziksel olarak bulunmayan fakat, CSS aracılığıyla sayfanın ön yüzünde görülen sözde (sahte) HTML elemanlarıdır.
+
+
+sözde öğe:    çift iki nokta
+sözde sınıflar:   tek iki nokta
+
+
+::after sözde öğesi
+<div class="box">
+   div etiketi
+  </div>
+
+div {
+  background: yellow;
+        }
+
+.box::after{
+   content: 'sonraki yazi';
+            }
+
+
+-------------------------------------- gap --------------------------------------------
+
+
+
+
+--------------------------------------display-----------------------------------------
+
+display:flex;   ---> yanyana olsun
+
+
+-----------------------------------sona almak için-------
+ justify-content:flex-end;
+
+
+
+
 
