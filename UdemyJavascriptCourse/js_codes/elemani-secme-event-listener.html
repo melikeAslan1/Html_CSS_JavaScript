@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <btn id="btnDeleteAll">
+
+    </btn>
+   <script>
+    const btn=document.querySelector('#btnDeleteAll');
+
+    const btn2=document.querySelector('#btnAddNewTask');
+
+    btn.addEventListener('click', function(){
+        console.log('butona tıklandi.');
+    })
+
+    btn.addEventListener('click',btnClick);
+    btn2.addEventListener('click',btnClick);
+
+    function btnClick() {
+        console.log('butona tıklandi');
+    }
+
+   </script>
+</body>
+</html>

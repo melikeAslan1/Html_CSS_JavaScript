@@ -153,7 +153,7 @@ justify-content-between --->  sütunları arası eşit boşluklar olacak şekild
 
 
 
-flex-column  -->             <div class="row flex-column "> -->  o satırın altına yazdığım sütunları satır gibi yap. 
+flex-column  -->             <div class="row flex-column "> -->  o satırın altına yazdığım sütunları satır gibi yap. bunu yaparsan align item center yatayda ortalama olur, justify content center dikeyde ortalama olur.
 
 col-auto ----->              inline element gibi. sadece o alanı kaplar .
 

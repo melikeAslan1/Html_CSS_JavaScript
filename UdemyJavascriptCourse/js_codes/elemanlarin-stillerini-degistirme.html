@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .p1{
+        color:red;
+        width:50%;
+        border:1px solid green;
+        text-align:center;
+        background-color:black;
+       }
+    </style>
+</head>
+<body>
+    <p class="p1" onclick="ozellikleriDegistir()">
+       Kaan Academy
+    </p>
+
+    <script>
+        function ozellikleriDegistir(){
+            var paragrafimiz= document.getElementsByClassName("p1")[0];
+            paragrafimiz.style.color="orange";
+            paragrafimiz.style.width="75%";
+            paragrafimiz.style.backgroundColor="turquoise";
+            paragrafimiz.style.textAlign="left";
+        }
+    </script>
+
+</body>
+</html>

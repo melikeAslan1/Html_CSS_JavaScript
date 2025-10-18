@@ -4,6 +4,7 @@ height boy
 
 width:600 px;  50%; tarayıcıya göredir.  en.
 height:100 px;  değişmez.  boy.
+
 ----------------------------------------------------
 position-aBDOLUTE: bağımsız
 
@@ -104,7 +105,6 @@ p {
 -------------------------MARGIN--------------------------------------------------
 
 used to create space around elements, elementin dışında boşluk.
-
 
 margin-top: 100px;
 margin-bottom: 100px;
@@ -237,7 +237,7 @@ img{
 ------------------------------------POSITION---------------------------------------
 
 static
-relative
+relative  --> iğıçğio uluzeux ışüto lğao ohp çhoohs eu mrlluznlnı,
 fixed     --> hep ekranda kalsın
 absolute
 sticky
@@ -267,13 +267,13 @@ farklı sayfanın class ını kullanıyorum container ında padding var.
 
 ------------------ div icinde img ortalama ------------------------------------
 
-class a d-flex align-items-center  justify-content-center
+class a d-flex align-items-center justify-content-center
 
 
 ------------------------------------before after---------------------------------------------
 
 :before & ::after, bir web sayfasının DOM’unda yer almayan, yani HTML kodları içerisinde fiziksel olarak bulunmayan fakat, CSS aracılığıyla sayfanın ön yüzünde görülen sözde (sahte) HTML elemanlarıdır.
-
+ özellikle iconlar küçük işaretlerde before after kullanılır.
 
 sözde öğe:    çift iki nokta
 sözde sınıflar:   tek iki nokta
@@ -293,6 +293,8 @@ div {
             }
 
 
+**before after olan yerde  content: ''; olmak zorunda.
+
 -------------------------------------- gap --------------------------------------------
 
 
@@ -303,10 +305,41 @@ div {
 display:flex;   ---> yanyana olsun
 
 
------------------------------------sona almak için-------
+-----------------------------------sona almak için-----------------------------------
  justify-content:flex-end;
 
 
+-----------------bir yapıyı sabitlemek için------------------------------------------
+position:fixed;
+top:0;
+transition: top 0.3s;   
+
+-    -    -     -
+position: -webkit-sticky;
+position: sticky;
+top: 174px;
+
+-    -    -  
+position: sticky;
+top: 174px;
+
+------------------------hover---------------------------------------------------
+.hover-kod2:hover{
+     --tw-bg-opacity: 1;
+    background-color: rgb(20 20 20 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(239 179 18 / var(--tw-text-opacity));
+    border-radius: 9999px;
+    height: 3.5rem;
+    width: 11rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+.hover-kod2:hover .dent{   -->  hover-kod2 class ın üzerine gelince .dent classında backgroun color değişsin.  bunun için dent class ı hover-kod2 içinde olmalı
+      background-color: red;
+}
 
 
 

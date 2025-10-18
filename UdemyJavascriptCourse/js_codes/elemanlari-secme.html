@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <div class="bolum1"><p>
+                Lorem ipsum dolor sit amet.
+            </p>
+            <p>Lorem ipsum dolor sit amet.</p><p>Lorem ipsum dolor sit amet.</p></div>  
+        <script>
+            var bolum1cocuk=document.getElementsByClassName("bolum1")[0];
+        
+            bolum1cocuk.lastChild.innerHTML="<b>Son çocuğu değiştirdik</b>";
+
+            if(bolum1cocuk.hasChildNodes()){
+                document.body.innerHTML += "ÇOCUK VAR";
+            }
+
+            var paragraflar=document.getElementsByTagName("p");
+            paragraflar[0].parentNode.innerHTML +="<p>paragraf3</p>"
+
+            paragraflar[1].nextSibling.innerHTML= "<b>burasi değiştirildi.</b>"
+
+            console.log(paragraflar.childNodes);
+            console.log(paragraflar.childNodes.length); //aradaki boşluklari da saydi.
+            console.log(paragraflar.childElementCount);  //sadece paragraflari sayar.  
+
+
+
+        </script>
+            
+    </body>
+    
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height:250px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+         Kaan Academy
+
+
+    </div>
+
+    <img src="img/coder.jpg" alt="">
+
+    <script>
+        var divimiz = document.getELementById("div1");
+        var resim=document.getElementsByTagName("img")[0];
+
+        resim.onload=function(){
+            alert("Resim Yuklendi.");
+        };
+
+        resim.onclick=function() {
+            //alert("Resme tiklandi.");
+            resim.src="img/laptop.jpg";
+        }; 
+ 
+
+
+        //metotlar kullanılarak eventler yazilir.
+        //onload genel olarak sayfada o etiket yüklendiğinde gorundugunde edemek.
+        //onload div yüklendiğinde demek.
+        //bazı eventler bazı etiketlerde kullanılmaz.
+        // onload img'lerde kullanılır.
+
+        //onload
+        //onclick
+        //onchange
+        //onkeyup   klavyede herhangi bir tuş kalktigi an calisir.
+        //onkeydown  klavyede tusa bastigin sürece, onmousedown ile ayni diyebiliriz.
+        //onmouseover
+        //onmouseout
+        //onmousedown   mousea bastığımız an devreye girer daha cekmeden.
+        //onmouseup  mouse dan el kaldirilinca tik kalkinca yani.
+        //onblur
+        //onfocus
+        
+    </script>
+</body>
+</html>

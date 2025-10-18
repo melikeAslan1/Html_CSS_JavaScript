@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+      parent
+      <div id="child">
+          child
+      </div>
+    </div>
+
+   <script>
+    var parent=document.getElementById("parent");
+    var child=document.getElementById("child");
+
+    parent.addEventListener("click",parentYaz,true); //capturing
+    child.addEventListener("click",cocukYaz,true); //capturing
+
+    function parentYaz(event) {
+        event.stopPropagation();
+        console.log("parent");
+    }
+
+    function cocukYaz(event) {
+        event.stopPropagation();
+        console.log("child");
+    }
+   </script>
+
+</body>
+</html>
+<!-- 1. etiket içinde event eklemiştik fonksiyon 
+2. div.onclick şeklinde
+3. doğrudan event listener ekleyerek event tetiklenme sağlayacağız.
+*event listener ı silebiliyosun. 
+*bubbling -> child a tıklayınca parent ın da sonra cağrılması çünkü child parentın içinde . bu olaya deniyor.
+*capturing -> kapsama önce parentın sonra child ın cagrilmasi. 
+propagation -> yayilma -->

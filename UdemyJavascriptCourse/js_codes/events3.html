@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input class="inputCSS" type="text" value="Bir isim giriniz">
+    <script>
+        var input=document.GetElementsByClassName("inputCSS")[0];
+
+        input.onchange = function() {
+            input.value=input.value.toUpperCase();
+        };
+
+        input.onkeyup=function(){   //onkeyup   klavyede herhangi bir tuş kalktigi an calisir.
+            input.value.toUpperCase();
+        };
+
+        input.onkeydown=function() {
+            input.value=input.value.toUpperCase();
+        }
+
+        //onchange genelde inputlarda kullanılır.
+    </script>
+</body>
+</html>

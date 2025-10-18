@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Mouse eventleri-->
+<div id="div1">
+   Kaan Academy
+</div>
+<script>
+    var divimiz=document.getElementById("div1");
+
+    divimiz.onmouseover = function() {
+        divimiz.innerHTML="mouse uzerine geldi";
+    };
+    divimiz.onmouseout=function() {
+        divimiz.innerHTML="Kaan Academy";
+    };
+
+    divimiz.onmousedown=function() {
+        divimiz.innerHTML="Mouse a basildi."
+    };
+    divimiz.onmouseup=function() {
+        divimiz.innerHTML="Mouse dan el kaldirildi."
+    };
+
+   //klavye hareketleri
+   //onblur
+   //onfocus
+</script>
+
+</body>
+</html>

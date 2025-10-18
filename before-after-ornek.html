@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carpi{
+            width: 25px;
+        }
+        .carpi::before{
+            content: '';
+            width: 25px;
+            height: 5px;
+            display: block;
+            background-color: black;
+        }
+        .carpi::after{
+            content: '';
+            width: 25px;
+            height: 5px;
+            display: block;
+            background-color: black;
+        }
+
+        .carpi2{
+            width: 25px;
+            height: 5px;
+            position: relative;
+        }
+        .carpi2::before{
+            content: '';
+            width: 25px;
+            height: 5px;
+            position: absolute;
+            background-color: black;
+            transform: rotate(-45deg);
+            
+        }
+        .carpi2::after{
+            content: '';
+            width: 25px;
+            height: 5px;
+            position: absolute;
+            display: block;
+            background-color: black;
+            transform: rotate(45deg)
+        }
+
+        .carpi3{
+            width: 25px;
+            height: 5px;
+            position: relative;
+        }
+        .carpi3::before, .carpi3::after{
+            content: '';
+            width: 25px;
+            height: 5px;
+            position: absolute;
+            background-color: black;
+            transform: rotate(0deg);
+        }
+        .carpi3:hover::before{
+            transform: rotate(45deg);
+            
+        }
+        .carpi3:hover::after{
+            transform: rotate(-45deg);
+            
+        }
+        .carpi4{
+            width: 25px;
+            height: 25px;
+            position: relative;
+            background-color: red;
+            cursor: pointer;
+
+        }
+        .carpi4::before, .carpi4::after{
+            content: '';
+            width: 25px;
+            height: 3px;
+            position: absolute;
+            background-color: black;
+            transform: rotate(0deg);
+            transition:all 0.2s ease;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .carpi4:hover::before{
+            transform: rotate(45deg);
+            
+        }
+        .carpi4:hover::after{
+            transform: rotate(-45deg);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="carpi">asdasd</div>
+    <br>
+    <br>
+    <div class="carpi2"></div>
+    <br>
+    <br>
+    <div class="carpi3"></div>
+    <br>
+    <br>
+    <div class="carpi4"></div>
+</body>
+</html>
